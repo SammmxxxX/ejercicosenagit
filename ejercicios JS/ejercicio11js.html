@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 11</title>
+</head>
+<body>
+    <script>
+        let saldo = 500000;
+        let opcion = parseInt(prompt("CAJERO AUTOMATICO\n\n1. Consultar saldo\n2. Depositar\n3. Retirar\n4. Salir"));
+
+        switch (opcion) {
+            case 1: 
+            alert("Su saldo actual es: $" + saldo);
+            break;
+
+            case 2: 
+            let deposito = parseInt(prompt("Ingrese el monto a depositar"));
+            saldo = saldo + deposito;
+            alert("Deposito exitoso.\nNuevo saldo: $" + saldo);
+            break;
+
+            case 3: 
+            let retiro = parseInt(prompt("Ingrese el monto a retirar "));
+            if (retiro <= saldo) {
+                saldo = saldo - retiro;
+                alert("Retiro extisoso de $" + retiro + ".\nNuevo saldo disponible: $" + saldo);
+            } else {
+                alert("Fondos insuficientes.");
+            }   
+            break;
+
+            case 4: 
+            alert("Gracias por utilizar el cajero.");
+            break;
+
+            default: 
+            alert("Opcion no valida.");
+            break;
+        }
+    </script>
+</body>
+</html>

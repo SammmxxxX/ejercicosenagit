@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let opcion = parseInt(prompt("Seleccione una opción:\n1. Longitud (Metros a Kilómetros)\n2. Peso (Kilogramos a Libras)\n3. Temperatura (Celsius a Fahrenheit)"));
+
+switch (opcion) {
+
+    case 1:
+
+        let metros = parseFloat(prompt("Ingrese la cantidad de metros"));
+
+        alert(metros + " metros equivalen a " + (metros / 1000) + " kilómetros.");
+
+        break;
+
+    case 2:
+
+        let kilogramos = parseFloat(prompt("Ingrese la cantidad de kilogramos"));
+
+        alert(kilogramos + " kilogramos equivalen a " + (kilogramos * 2.20462) + " libras.");
+
+        break;
+
+    case 3:
+
+        let celsius = parseFloat(prompt("Ingrese la temperatura en grados Celsius"));
+
+        let fahrenheit = (celsius * 9 / 5) + 32;
+
+        alert(celsius + " °C equivalen a " + fahrenheit + " °F");
+
+        break;
+
+    default:
+
+        alert("Opción no válida.");
+
+        break;
+
+}
+
+    </script>
+</body>
+</html>

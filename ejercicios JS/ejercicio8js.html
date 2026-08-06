@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 8</title>
+</head>
+<body>
+    <script>
+        let compra = parseFloat(prompt("Ingrese el valor de la compra $0.000"));
+        let categoria = prompt("Ingrese la categoria (V, F o N)"); 
+
+        switch (categoria) {
+            case "V":
+            alert("Total a pagar: $" + (compra * 0.80));
+            break;
+
+            case "F":
+            alert("Total a pagar: $" + (compra * 0.90));
+            break;
+
+            case "N": 
+            alert("Total a pagar: $" + compra);
+            break;
+
+            default:
+            alert("Categoria no valida.");
+            break;
+        }
+    </script>
+</body>
+</html>

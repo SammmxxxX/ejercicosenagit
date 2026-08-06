@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let accion = parseInt(prompt("Seleccione una acción:\n1. Ataque Rápido\n2. Ataque Pesado\n3. Curación"));
+
+let estado = prompt("Ingrese el estado del enemigo (Defensa Activa o Normal)");
+
+switch (accion) {
+
+    case 1:
+
+        if (estado == "Defensa Activa") {
+
+            alert("¡Ataque Rápido mitigado por defensa! Daño final infligido: 10 puntos.");
+
+        } else {
+
+            alert("¡Ataque Rápido! Daño final infligido: 20 puntos.");
+
+        }
+
+        break;
+
+    case 2:
+
+        if (estado == "Defensa Activa") {
+
+            alert("¡Ataque Pesado mitigado por defensa! Daño final infligido: 22.5 puntos.");
+
+        } else {
+
+            alert("¡Ataque Pesado! Daño final infligido: 45 puntos.");
+
+        }
+
+        break;
+
+    case 3:
+
+        alert("¡Curación realizada! Recuperaste 30 puntos de vida.");
+
+        break;
+
+    default:
+
+        alert("Acción no válida.");
+
+        break;
+
+}
+    </script>
+</body>
+</html>

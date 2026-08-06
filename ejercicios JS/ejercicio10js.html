@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 10</title>
+</head>
+<body>
+    <script>
+        let tipo = prompt("Ingrese el tipo de vehiculo (M, A o C)");
+        let horas = parseInt(prompt("Ingrese las horas"));
+
+        switch (tipo) {
+            case "M": 
+            alert("Vehiculo: Moto\nTotal: $" + (horas * 2000));
+            break;
+
+            case "A": 
+            alert("Vehiculo: Auto\nTotal: $" + (horas * 4000));
+            break;
+
+            case "C": 
+            alert("Vehiculo: Camion\nTotal: $" + (horas * 8000));
+            break;
+
+            default: 
+            alert("Tipo de vehiculo no valido.");
+            break;
+        }
+    </script>
+</body>
+</html>

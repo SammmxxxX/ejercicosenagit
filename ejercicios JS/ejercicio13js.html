@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nivel = parseInt(prompt("Ingrese el código de triaje (1 al 5)"));
+
+switch (nivel) {
+
+    case 1:
+        alert("[NIVEL 1 - RESUCITACIÓN]\nColor: Rojo\nTiempo máximo de espera: Atención inmediata.");
+        break;
+
+    case 2:
+        alert("[NIVEL 2 - EMERGENCIA]\nColor: Naranja\nTiempo máximo de espera: 15 minutos.");
+        break;
+
+    case 3:
+        alert("[NIVEL 3 - URGENCIA]\nColor: Amarillo\nTiempo máximo de espera: 60 minutos.");
+        break;
+
+    case 4:
+        alert("[NIVEL 4 - URGENCIA MENOR]\nColor: Verde\nTiempo máximo de espera: 120 minutos.");
+        break;
+
+    case 5:
+        alert("[NIVEL 5 - SIN URGENCIA]\nColor: Azul\nTiempo máximo de espera: 240 minutos.");
+        break;
+
+    default:
+        alert("Código de triaje no válido.");
+        break;
+
+}
+    </script>
+</body>
+</html>

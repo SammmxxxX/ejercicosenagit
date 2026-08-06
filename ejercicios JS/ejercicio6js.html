@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num1 = parseFloat(prompt("Ingrese el primer numero"));
+        let num2 = parseFloat(prompt("Ingrese el segundo numero"));
+        let operador = prompt("Ingrese un operador");
+
+        switch (operador) {
+            case "+": 
+            alert("Resultado: " + (num1 + num2));
+            break;
+
+            case "-": 
+            alert("Resultado: " + (num1 - num2));
+            break;
+
+            case "*": 
+            alert("Resultado: " + (num1 * num2));
+            break;
+
+            case "/": 
+            if (num2 !=0) {
+                alert("Resultado: " + (num1 / num2));
+            } else {
+                alert("No se puede dividir entre cero");
+            }
+            break;
+
+            default:
+            alert("Operador no valido");
+            break;
+e
+        }
+    </script>
+</body>
+</html>

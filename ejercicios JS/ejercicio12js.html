@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let codigo = parseInt(prompt("Ingrese el codigo del producto\n101. Agua\n102. Gaeosa\n103. Energizante"));
+        let dinero = parseInt(prompt("Ingrese el dinero"));
+
+        switch (codigo) {
+
+    case 101:
+
+        if (dinero >= 2000) {
+            alert("Producto despachado: Agua.\nSu cambio es: $" + (dinero - 2000));
+        } else {
+            alert("Dinero insuficiente.");
+        }
+
+        break;
+
+    case 102:
+
+        if (dinero >= 3500) {
+            alert("Producto despachado: Gaseosa.\nSu cambio es: $" + (dinero - 3500));
+        } else {
+            alert("Dinero insuficiente.");
+        }
+
+        break;
+
+    case 103:
+
+        if (dinero >= 5000) {
+            alert("Producto despachado: Energizante.\nSu cambio es: $" + (dinero - 5000));
+        } else {
+            alert("Dinero insuficiente.");
+        }
+
+        break;
+
+    default:
+        alert("Código no válido.");
+        break;
+
+}
+    </script>
+</body>
+</html>
